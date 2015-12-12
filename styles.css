@@ -1,0 +1,124 @@
+body {
+    height: 100vh;
+    background-color: black;
+}
+header {
+    color: white;
+    font-size: 1.8em; 
+ 
+}
+header div {
+    width: 50%;
+    margin: 0 auto;
+
+}
+.score span{
+    float: right;
+
+}
+ 
+.wrapper {
+    width: 70%;
+    height: 80%;
+    margin: 0 auto;
+    background-image: url(bg.png);
+    background-size: cover;
+    position: relative;
+}
+.menu {
+    position: absolute;
+    width: 100%;
+    top: 45%;
+    padding: 20px;
+    text-align: center;
+    margin: 0 auto;
+    
+}
+#start {
+    font-size: 30px;
+}
+.gunman {
+    position: absolute;
+    background: url("gunman.png");
+    height: 64px;
+    width: 33px;
+    transform: scale(3);
+    right: 1%;
+    top: 50%;
+}
+
+.gunman_go {
+
+    animation: go 0.5s steps(3) infinite;
+}
+
+.gunman_stand {
+    right: 50%;
+    background-position: -99px 0;
+    
+}
+
+.gunman_dead {
+    animation: dead 0.5s steps(1);
+    background-position: -371px 0;
+}
+
+.gunman_shooting {
+    animation: shooting 1s steps(3) reverse;
+    background-position: -202px 0;
+}
+.gunman_alert {
+    background: black;
+    padding: 10px 20px;
+    border: 2px solid red;
+    border-radius: 5px;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    color: white;
+    font-size: 34px;
+}
+.result_msg {
+    position: absolute;
+    text-align: center;
+    width: 100%;    
+    color: black;
+    top: 30%;
+    font-weight: 900;
+    animation: fontbulger 1.5s;
+    font-size: 34px;
+}
+@keyframes go {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: -99px 0;
+    }
+}
+
+@keyframes shooting {
+    from {
+        background-position: -236px 0;
+    }
+    to {
+        background-position: -337px 0;
+    }
+}
+
+@keyframes dead {
+    from {
+        background-position: -338px 0;
+    }
+    to {
+        background-position: -371px 0;
+    }
+}
+@keyframes fontbulger {
+  0% {
+    font-size: 22px;
+  }
+   100% {
+    font-size:34px;
+  }
+}
