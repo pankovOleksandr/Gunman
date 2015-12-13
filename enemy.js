@@ -49,7 +49,7 @@
                     $(".gunman").hide();
                     }, 1000)
                 this.$result.text("Congratulations!!! You win!!!")
-                            .append(".wrapper");
+                            .appendTo(".wrapper");
 
                                  
                 break;

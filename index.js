@@ -31,7 +31,7 @@
     	clearInterval(timer.inervalId);
     	canFire = false;
     	game.state = "win";
-    	console.log('USER KILL ENEMY');
+    	
   	});
 
 	$(document).on('click', '#start', function(event) {
